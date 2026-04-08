@@ -1,0 +1,168 @@
+<!-- Indica que el documento es HTML5 -->
+<!DOCTYPE html> 
+
+<!-- Aquí comienza el documento en HTML, el idioma está en español -->
+<html lang="es">
+
+<head>
+    <!-- Configuración de la página, no se muestra en pantalla -->
+
+    <!-- Define que el texto usará caracteres especiales (acentos, ñ, etc.) -->
+    <meta charset="UTF-8">
+
+    <!-- Ajusta la vista para que se vea bien en celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El meta copyright se enlaza para las búsquedas SEO con el nombre del autor.-->
+    <meta name="copyright" content="© 2025 Paulina Vertti">
+    <!--Palabras claves para la búsqueda en SEO-->
+    <meta name="keywords" content="italiano, pasta, Restaurante">
+    <!--Proporciona el nombre del autor, aparece en la inspección de la página-->
+    <meta name="author" content="Paulina Vertti">
+
+    <!-- Título de la página (aparece en la pestaña del navegador) -->
+    <title>Il Ristorante di Vertti | Rest. Italiano</title>
+
+    <!-- Icono pequeño que aparece en la pestaña del navegador -->
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Conexiones rápidas para cargar fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuente personalizada desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Deja visualizar los íconos de Instagram y Facebook (va antes de enlazar CSS)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Conexión al archivo de estilos CSS donde está el diseño -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Aquí empieza lo que sí se ve en la página -->
+
+    <!-- ENCABEZADO (parte superior de la página) -->
+    <header class="header">
+        <!-- Logo o nombre del restaurante -->
+        <div class="logo">
+            <h1>Il Ristorante di Vertti</h1>
+        </div>
+
+        <!-- Menú de navegación (botones para moverse en la página) -->
+        <nav class="nav">
+            <ul>
+                <!-- Cada "li" es una opción del menú -->
+                <li><a href="#inicio" class="nav-button">Inicio</a></li>
+                <li><a href="#menu" class="nav-button">Menú</a></li>
+                <li><a href="https://forms.gle/Gh8VYyd8VnRQ1rF66" class="nav-button">Reservas</a></li>
+                <li><a href="#contacto" class="nav-button">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Sección de inicio con imagen o mensaje de bienvenida -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <!-- Título con colores como la bandera de Italia -->
+                <h2>
+                    <span style="color:#81D158;font-weight:bold">Benvenuti nella</span>
+                    <span style="color:white;font-weight:bold">cucina</span>
+                    <span style="color:#FC342D;font-weight:bold">di Vertti</span>
+                </h2>
+
+                <!-- Texto de bienvenida -->
+                <p>Saborea la experiencia Italiana en cada platillo.</p>
+
+                <!-- Botones que llevan a las secciones Tienda y Reservas -->
+                <a href="https://forms.gle/Gh8VYyd8VnRQ1rF66" class="btn">Reservar</a>
+                <a href="https://www.pastilandia.com.mx" class="btn">Tienda</a>
+        </section>
+
+        <!-- Sección del menú comienza -->
+        <section id="menu" class="menu">
+            <h2>Il Nostro Menú</h2>
+
+            <!-- Botones para filtrar (ejemplo: entradas, postres, etc.) 
+             Cuando metes <div> entre cada filtro se ve en vertical, si usas solo un <div>, se ve en horizontal-->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Todo</button>
+                <button class="filter-btn active" data-category="entradas">Entradas</button>
+                <button class="filter-btn active" data-category="platillos-fuertes">Platillos Fuertes</button>
+                <button class="filter-btn active" data-category="bebidas">Bebidas </button>
+                <button class="filter-btn active" data-category="postres">Postres </button>
+            </div>
+
+            <!--Colocamos las clases de los elementos del menú-->
+            <div class="menu-items">
+
+            </div>
+            <!--Los ítems se cargan directamente con JS -->
+
+
+        <!--SLIDER DE FOTOS RESTAURANTE, AGREGAR 
+        (al poner un <div> entre cada imagen se mueven a vertical, sin <div> entre ellas, son horizontal.)-->
+            <div class="row">
+  <div class="column">
+    <img src="img/rest.jpg" alt="Restaurante" style="width:80%; height:20%; border-radius: 8px">
+  </div>
+  <div class="column">
+    <img src="img/chef.jpg" alt="Chef" style="width:80%; height:20%; border-radius: 8px">
+  </div>
+  <div class="column">
+   <img src="img/comida copia.jpg" alt="Restaurante 2" style="width:80%; height:20%; border-radius: 8px">
+</div>
+    </div>
+
+  </div>
+        </section>
+
+
+        <!-- Sección de reservas -->
+        <section id="Reservas" class="Reservas">
+            <h2>Reservas</h2>
+            <p>Haz tu reserva en línea o contáctanos para más información.</p>
+        </section>
+    </main>
+
+    <!-- CONTENIDO LATERAL (promociones, avisos, etc.) -->
+    <aside class="aside">
+        <h3>Promociones</h3>
+        <p>Martes de Pasta: 2x1 en todas las pastas</p>
+        <p>Viernes de Pizza: Todas las pizzas a mitad de precio</p>
+        <p>Sábados de Buffet</p>
+    </aside>
+
+    <!-- PIE DE PÁGINA (parte de abajo) -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content"></div>
+        <!-- Información de contacto, copyright, todo lo que incluya a footer -->
+        <address>
+            <a href="https://maps.app.goo.gl/UKkYsgMdkoMyNLfN7"
+            target="_blank" rel="noreferrer noopener" style="color:#BECE76">Centro Comercial La Cúspide, Av. Lomas Verdes, Naucalpan de Juárez, Méx.</a>
+
+            <div class="footer-content"></div>
+            Teléfono: <a href="tel:+5547639858" style="color:#BECE76">55 4763 9858</a>
+        </address>
+        <!--Debajo de address e info. de contacto, ponemos copyright-->
+        <p class="copyright">&copy; 2025 Il Ristorante di Vertti</p>
+
+        <!--Redes sociales debajo de copyright (íconos)-->
+        <div class="social">
+            <a href="https://www.facebook.com/p.v3rtti" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/p.pvertti/" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Archivo de JavaScript que dará funciones interactivas -->
+    <script src="js/script.js"></script>
+</body>
+</html>

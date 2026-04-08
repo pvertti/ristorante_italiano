@@ -1,0 +1,286 @@
+/* Un comentario en CSS se escribe así. Sirve para dejar notas que el navegador ignora.  */
+
+/* === ESTILOS GENERALES === */
+/* El asterisco (*) es el "selector universal". Aplica estos estilos a TODOS los elementos de la página. */
+* {
+    margin: 0;      /* Quita el margen exterior por defecto que ponen los navegadores. */
+    padding: 0;     /* Quita el relleno interior por defecto. */
+    box-sizing: border-box; /* Cambia cómo se calcula el tamaño total de una caja, haciendo 
+    que el padding y borde no la hagan más ancha. */
+}
+
+/* Selector para la etiqueta <html>. */
+html {
+    scroll-behavior: smooth; /* Hace que el desplazamiento al hacer clic en un enlace (ej: #menu) 
+    sea una animación suave en lugar de un salto brusco. */
+}
+
+/* Selector para la etiqueta <body>. Estos estilos los heredarán la mayoría de los elementos dentro del body. */
+body {
+    line-height: 1.6;        /* Define la altura de cada línea de texto, para que no esté muy apretado. */
+    color: #333;             /* Define el color de texto principal (un gris oscuro). */
+    background-color: #f9f9f9; /* Define el color de fondo de la página (un gris muy claro). */
+    /* Aquí aplicamos la nueva fuente que importamos en el HTML. 'sans-serif' es una fuente de respaldo por si 'Montserrat' no carga. */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* === HEADER (BARRA DE NAVEGACIÓN SUPERIOR) === */
+/* El punto (.) antes de 'header' indica que estamos aplicando estilos a la 'class' llamada "header". */
+.header {
+    background: #0F3602;      /* Color de fondo del header (verde oscuro). */
+    color: white;             /* Color del texto dentro del header. */
+    padding: 1rem;            /* Relleno interior para que el contenido no esté pegado a los bordes. */
+    display: flex;            /* Activa Flexbox, un modo para alinear elementos fácilmente. */
+    justify-content: space-between; /* Coloca los elementos hijos (logo y nav) en los extremos opuestos. */
+    align-items: center;      /* Centra verticalmente los elementos. */
+    position: fixed;          /* Fija el header en la parte superior de la pantalla, para que no se mueva al hacer scroll. */
+    width: 100%;              /* Hace que el header ocupe todo el ancho de la pantalla. */
+    z-index: 1000;            /* Asegura que el header siempre esté por encima de otros elementos. */
+}
+
+.logo h1 {
+    font-size: 1.8rem; /* Tamaño de la fuente para el título del logo. */
+}
+
+.nav ul {
+    display: flex;     /* Usa Flexbox para poner los elementos de la lista (<li>) uno al lado del otro. */
+    list-style: none;  /* Quita los puntos (viñetas) de la lista. */
+}
+
+/* === ESTILOS PARA LOS BOTONES DE NAVEGACIÓN === */
+.nav-button {
+    background-color: #DE1422; /* Color de fondo rojo para el botón. */
+    color: white;               /* Color del texto del botón. */
+    padding: 10px 20px;         /* Relleno interior (10px arriba/abajo, 20px izquierda/derecha). */
+    margin-left: 15px;          /* Margen exterior a la izquierda para separar los botones. */
+    border-radius: 5px;         /* Redondea las esquinas del botón. */
+    text-decoration: none;      /* Quita el subrayado que tienen los enlaces por defecto. */
+    font-weight: bold;          /* Pone el texto en negrita. */
+    /* 'transition' crea una animación suave cuando una propiedad cambia (ej: al pasar el mouse). */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* ':hover' aplica estilos especiales cuando el puntero del mouse está sobre el elemento. */
+.nav-button:hover {
+    background-color: #900303; /* Cambia el fondo a un rojo más oscuro. */
+    color: white;              /* Mantiene   el texto en blanco. */
+    transform: translateY(-2px); /* Mueve el botón 2px hacia arriba, creando un efecto de "levantarse". */
+}
+
+/* === HERO SECTION (LA IMAGEN PRINCIPAL DEL BANNER) === */
+.hero {
+    height: 100vh; /* La altura será del 100% de la altura de la ventana del navegador (viewport height). */
+    /* Pone la imagen de fondo. 'no-repeat' evita que se repita, 'center center' la 
+    centra, y 'cover' hace que cubra todo el espacio sin deformarse. */
+    background: url('../img/Banner.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;      /* Centra el contenido verticalmente. */
+    justify-content: center;  /* Centra el contenido horizontalmente. */
+    text-align: center;       /* Centra el texto del contenido. */
+    padding-top: 80px;        /* Agrega un relleno superior para que el contenido no quede oculto detrás del header 'fixed'. */
+    position: relative;       /* Necesario para que el efecto de capa oscura funcione correctamente. */
+}
+
+/* '::before' es un pseudo-elemento que nos permite crear una "capa" virtual 
+justo dentro del .hero pero detrás de su contenido. */
+
+.hero::before {
+    content: '';              /* Siempre es necesario para que ::before funcione. */
+    position: absolute;       /* Lo posiciona relativo a su padre (.hero). */
+    top: 0; left: 0;          /* Lo ubica en la esquina superior izquierda. */
+    width: 100%; height: 100%; /* Hace que ocupe todo el espacio de .hero. */
+    background-color: rgba(0, 0, 0, 0.5); /* Esto crea la capa oscura semitransparente para que el texto resalte más. */
+    z-index: 1;               /* Lo pone por debajo del contenido pero por encima del fondo. */
+}
+
+.hero-content {
+    position: relative; /* Lo posiciona relativo a su lugar normal. */
+    z-index: 2;         /* Lo pone por encima de la capa oscura (z-index: 1). */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #DE1422; /* Color de fondo rojo para el botón. */
+    color: white;               /* Color del texto del botón. */
+    padding: 10px 20px;         /* Relleno interior (10px arriba/abajo, 20px izquierda/derecha). */
+    margin-left: 15px;          /* Margen exterior a la izquierda para separar los botones. */
+    border-radius: 5px;         /* Redondea las esquinas del botón. */
+    text-decoration: none;      /* Quita el subrayado que tienen los enlaces por defecto. */
+    font-weight: bold;          /* Pone el texto en negrita. */
+   
+}
+.btn:hover{
+background-color: #4F1E1E; 
+color: white;     
+transform: translateY(-2px); 
+}
+
+
+/* === BOTONES DE MENÚ (NUEVOS ESTILOS) === */
+
+.filter-btn{
+    background-color: #044104;
+    color: white; 
+    font-family: verdana;
+    padding: 10px 20px;         
+    margin-left: 15px;         
+    border-radius: 5px;             
+    font-weight: bold;    
+}
+
+.filter-btn:hover{
+background-color: #900303; 
+color: white;     
+transform: translateY(-2px); 
+} 
+
+/* ------ CONFIGURACIONES DE ITEMS DE MENÚ ----- */
+.menu {
+    padding: 5rem;
+    text-align: center; /* Centra el título 'Nuestro Menú' y los botones de filtro */
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-category {
+    margin-bottom: 3rem;
+}
+
+.menu-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+.filters {
+    margin-bottom: 2rem;
+}
+
+/* Alineación horizontal de tarjetas */
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* CAMBIO: ancho fijo para cada tarjeta */
+.menu-item {
+    background: darkolivegreen;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 230px;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.menu-item h3 {
+    padding: 1rem;
+    font-size: 18px;
+    color: #BECE76;  
+
+}
+
+.menu-item p {
+    font-size: 11px;
+    color: white;
+}
+
+.menu-item span {
+    color: #0F3602;
+    font-weight: bold;
+}
+
+/* === SECCIÓN DE SLIDER === */
+
+/* Estilos para el slider */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* === PIE DE PÁGINA Y LATERAL (NUEVOS ESTILOS) === */
+.footer, .aside {
+    padding: 2rem;         /* Añade espaciado interno para que el contenido respire */
+    text-align: center;    /* Centra el texto */
+    line-height: 1.8;      /* Aumenta la altura de línea para una lectura más cómoda */
+    background-color: #BECE76;
+}
+
+.footer {
+    background-color: #0F3602;
+    color: white;
+}
+
+.footer a {
+    color: #DE1422; /* Cambia el color del enlace del teléfono para que destaque */
+}
+
+.aside {
+    background-color: #DBDCDB;
+    border-top: 1px solid #ddd;
+}
+
+
+/* === SECCIÓN DE RESPONSIVE DESIGN === */
+/* '@media' aplica un grupo de estilos solo si se cumple una condición. En este caso, si el ancho de la pantalla es 768px o menos (celulares y tablets pequeñas). */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambia la dirección de flexbox a columna, para que el logo esté arriba y la nav abajo. */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Apila los botones de navegación en pantallas pequeñas */
+        margin-top: 1rem;       /* Agrega un margen superior a la lista de navegación. */
+        padding-left: 0;        /* Quita el padding que las listas suelen tener a la izquierda. */
+    }
+    
+    .nav li {
+        margin-bottom: 10px; /* Añade espacio entre los botones apilados */
+    }
+
+    .nav ul li a {
+        margin: 0 5px;         /* Ajusta el margen de los botones para pantallas pequeñas. */
+        padding: 8px 10px;     /* Hace los botones un poco más pequeños. */
+        /*El diseño fue hecho con ayuda de mi hermano y sus explicaciones :) */
+    }
+    .menu-items {
+        grid-template-columns: 3fr;
+    }
+}
