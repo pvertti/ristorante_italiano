@@ -73,7 +73,7 @@ body {
     height: 100vh; /* La altura será del 100% de la altura de la ventana del navegador (viewport height). */
     /* Pone la imagen de fondo. 'no-repeat' evita que se repita, 'center center' la 
     centra, y 'cover' hace que cubra todo el espacio sin deformarse. */
-    background: url('../img/Banner.jpg') no-repeat center center/cover;
+    background: url('https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/Banner.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;      /* Centra el contenido verticalmente. */
     justify-content: center;  /* Centra el contenido horizontalmente. */
