@@ -11,7 +11,7 @@
     name: "Spaghetti al pesto", 
     category: "platillos-fuertes", 
     price: "$120", 
-    image: "img/pesto.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pesto.jpg",
     description: "Spaghetti sazonado con albahaca, aceite de oliva, piñones y parmesano.",
 },
 
@@ -20,7 +20,7 @@
     name: "Pizza Margherita", 
     category: "platillos-fuertes", 
     price: "$160", 
-    image: "img/pizza.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pizza.jpg",
     description: "Masa con salsa de tomate, albahaca y mozzarella artesanales.",
 },
 
@@ -29,7 +29,7 @@
     name: "Panne di aglio", 
     category: "entradas", 
     price: "$40", 
-    image: "img/panajo.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/panajo.jpg",
     description: "Pan recién horneado cortado, sazonado con ajo.",
 },
 
@@ -38,7 +38,7 @@
     name: "Zuppa di pomodoro", 
     category: "entradas", 
     price: "$55", 
-    image: "img/sopa.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/sopa.jpg",
     description: "Crema espesa elaborada con tomates tradicional de Sicilia.",
 },
 
@@ -47,7 +47,7 @@
     name: "Carpaccio di manzo", 
     category: "entradas", 
     price: "$80", 
-    image: "img/carp.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/carp.jpg",
     description: "Láminas finas de carne cocidas con limón, finas hierbas y parmesano.",
 },
 
@@ -56,7 +56,7 @@
     name: "Arancini", 
     category: "entradas", 
     price: "$65", 
-    image: "img/arancini.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/arancini.jpg",
     description: "Bolitas pequeñas de mozzarella con una capa crujiente de papa por fuera.",
 },
 
@@ -65,7 +65,7 @@
     name: "Lasagna di Carne", 
     category: "platillos-fuertes", 
     price: "$160", 
-    image: "img/lasaña.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/lasaña.jpg",
     description: "Finas láminas de pasta, con capas de salsa de tomate y carne marinada, con una costra de queso encima.",
     },
 
@@ -74,7 +74,7 @@
      name: "Gnocchi al pesto", 
      category: "platillos-fuertes", 
      price: "$120", 
-     image: "img/ñoqui.jpg" ,
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/ñoqui.jpg" ,
      description: "Gnocchi sazonado con albahaca, aceite de oliva, piñones y parmesano",
     },
 
@@ -83,7 +83,7 @@
      name: "Panna Cotta", 
      category: "postres", 
      price: "$65", 
-     image: "img/pannacotta.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pannacotta.jpg",
      description: ""
     },
 
@@ -92,7 +92,7 @@
      name: "Tiramsù", 
      category: "postres", 
      price: "$70", 
-     image: "img/tiramisu.jpg" ,
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/tiramisu.jpg" ,
      description: "Capas de café, mascarpone y bizcochos savoiardi"
     },
 
@@ -101,7 +101,7 @@
      name: "Gelato al cocco", 
      category: "postres", 
      price: "$55", 
-     image: "img/gelato.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/gelato.jpg",
      description: "Gelato artesanal hecho con coco fresco"
     },
 
@@ -110,7 +110,7 @@
      name: "Cannoli Siciliani", 
      category: "postres", 
      price: "$75", 
-     image: "img/cannoli.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/cannoli.jpg",
      description: "Queso ricotta y crema batida enrollado dentro de una suave masa de trigo"
     },
 
@@ -119,7 +119,7 @@
      name: "Mojito", 
      category: "bebidas", 
      price: "$85", 
-     image: "img/mojito.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/mojito.jpg",
      description: "Ron blanco acompañado de agua mineral, hojas de menta y jugo de limón"
     },
 
@@ -128,7 +128,7 @@
      name: "Larios Rosé", 
      category: "bebidas", 
      price: "$95", 
-     image: "img/lariosrose.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/lariosrose.jpg",
      description: "Ginebra destilado acompañado de frutos rojos, vino rojo espumoso y menta"
     },
 
@@ -137,7 +137,7 @@
      name: "Piña Colada", 
      category: "bebidas", 
      price: "$80", 
-     image: "img/piñacolada.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/piñacolada.jpg",
      description: "Leche de coco, Ron blanco y jugo de piña en una cremosa mezcla, acompañado de una cereza."
     },
 
@@ -146,7 +146,7 @@
      name: "Soda", 
      category: "bebidas", 
      price: "$45", 
-     image: "img/soda.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/soda.jpg",
      description: "Refresco de sabores. Pregunta por la disponibilidad"
     },
 
