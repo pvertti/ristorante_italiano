@@ -137,7 +137,7 @@
      name: "Anana Colada", 
      category: "bebidas", 
      price: "$80", 
-     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pinacolada.jpeg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/ananacolada.jpg",
      description: "Leche de coco, Ron blanco y jugo de piña en una cremosa mezcla, acompañado de una cereza."
     },
 
