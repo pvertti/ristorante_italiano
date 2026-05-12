@@ -84,7 +84,7 @@
      category: "postres", 
      price: "$65", 
      image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pannacotta.jpg",
-     description: ""
+     description: "Postre tradicional a base de nata, espumoso y acompañado de mermelada de cereza"
     },
 
      { 
