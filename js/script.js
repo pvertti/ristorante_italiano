@@ -65,7 +65,7 @@
     name: "Lasagna di Carne", 
     category: "platillos-fuertes", 
     price: "$160", 
-    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/lasaña.jpg",
+    image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/lasana.jpg",
     description: "Finas láminas de pasta, con capas de salsa de tomate y carne marinada, con una costra de queso encima.",
     },
 
@@ -74,7 +74,7 @@
      name: "Gnocchi al pesto", 
      category: "platillos-fuertes", 
      price: "$120", 
-     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/ñoqui.jpg" ,
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/noqui.jpg" ,
      description: "Gnocchi sazonado con albahaca, aceite de oliva, piñones y parmesano",
     },
 
@@ -134,10 +134,10 @@
 
       { 
     id: 15,
-     name: "Piña Colada", 
+     name: "Anana Colada", 
      category: "bebidas", 
      price: "$80", 
-     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/piñacolada.jpg",
+     image: "https://tiendacloud01pauopv.blob.core.windows.net/imagenespaulina/pinacolada.jpeg",
      description: "Leche de coco, Ron blanco y jugo de piña en una cremosa mezcla, acompañado de una cereza."
     },
 
